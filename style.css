@@ -93,7 +93,10 @@ nav li:hover {
   display: grid;
   place-items: center;
 }
-
+.hero_image{
+  display: block;
+  margin-left: 2% !important;
+}
 #hero h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -412,6 +415,9 @@ footer {
   html {
     font-size: 40%;
   }
+  .navbar-toggler-icon{
+    font-size: large;
+  }
   .logo{
     font-size: large;
   }
@@ -430,7 +436,7 @@ footer {
     /* width: 30%; */
   }
   #contact .container {
-    height: 70vh;
+    height: 40vh;
   }
   #hero h2{
     font-size: small;
@@ -438,6 +444,12 @@ footer {
   /* .project_container{
     height: 50rem;
   } */
+  .footer{
+    font-size: large;
+  }
+  .grid_item_skills p{
+    font-size:small;
+  }
 }
 @media (max-width: 500px) {
   html {
@@ -451,7 +463,7 @@ footer {
     place-items: center;
   }
   #contact .container {
-    height: 50vh;
+    height: 40vh;
   }
   /* .project_container{
     height: 160rem;
