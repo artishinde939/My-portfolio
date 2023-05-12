@@ -41,9 +41,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--lighting-color);
+  background: var(--lighting-color) !important;
 }
-
+.navbar{
+  background-color: var(--lighting-color) !important;
+  height: 7vh;
+}
+li a{
+  font-size: 3rem;
+  
+}
 section {
   scroll-margin-top: 50px;
 }
@@ -75,7 +82,7 @@ nav li:hover {
   background: var(--dark-color);
   padding: 4rem 0;
   border-bottom: 4px solid var(--lighting-color);
-  max-height: 100vh;
+  /* max-height: 100vh; */
 }
 #hero .container {
   display: flex;
@@ -285,7 +292,7 @@ nav li:hover {
 }
 .project_container {
   display: grid;
-  height: 45rem;
+  /* height: 60vh; */
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
@@ -341,7 +348,7 @@ nav li:hover {
 }
 
 #contact .container {
-  height: 90vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -371,6 +378,8 @@ nav li:hover {
 
 .card_content h3 a{
   color: #003251;
+  list-style: none;
+  text-decoration: none;
 
 }
 .top_contact{
@@ -398,9 +407,19 @@ footer {
 
 /* Media Query */
 
+
 @media (max-width: 786px) {
   html {
     font-size: 40%;
+  }
+  .logo{
+    font-size: large;
+  }
+  .navbar{
+    font-size: large;
+  }
+  li a{
+    font-size: large !important;
   }
   #hero .container {
     flex-direction: column;
@@ -408,10 +427,17 @@ footer {
   .hero_image {
     display: grid;
     place-items: center;
+    /* width: 30%; */
   }
   #contact .container {
     height: 70vh;
   }
+  #hero h2{
+    font-size: small;
+  }
+  /* .project_container{
+    height: 50rem;
+  } */
 }
 @media (max-width: 500px) {
   html {
@@ -427,4 +453,7 @@ footer {
   #contact .container {
     height: 50vh;
   }
+  /* .project_container{
+    height: 160rem;
+  } */
 }
